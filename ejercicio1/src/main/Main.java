@@ -47,6 +47,7 @@ public class Main {
 
 	    }while(desicion!=0);
 	    
+	    sc.close();
 	    
 	}
 
