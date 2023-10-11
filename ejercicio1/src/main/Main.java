@@ -14,7 +14,7 @@ public class Main {
 	    	
 	    	
 	    		System.out.println("--------------------------");
-	    		System.out.println("Eliga una de las opciones: \n"
+	    		System.out.println("Elija una de las opciones: \n"
 	    				+ "1. navegar\n"
 	    				+ "2. retroceder\n"
 	    				+ "3. obtener ubicacion actual\n"

@@ -1,16 +1,17 @@
 package main;
-import java.util.Stack;
+import java.util.ArrayDeque;
 public class Conversion {
 	
 	public String decimalABinario(int numero) {
-        Stack<Integer> pila = new Stack<Integer>();
+        ArrayDeque<Integer> cola = new ArrayDeque<Integer>();
+        if(numero==0)return "0";
         while (numero > 0) {
-            pila.push(numero % 2);
+        	cola.addFirst(numero%2);
             numero /= 2;
         }
         StringBuilder binario = new StringBuilder();
-        while (!pila.isEmpty()) {
-            binario.append(pila.pop());
+        while (!cola.isEmpty()) {
+            binario.append(cola.poll());
         }
         return binario.toString();
     }
